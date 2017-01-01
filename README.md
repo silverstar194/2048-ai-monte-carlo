@@ -94,8 +94,16 @@ In summary as the depth increased the percentage of game won and score did also.
 | 1000 			| 99%   		| 113072		|
 
 
-
-
+Most intersting was the spread of the random games behind each move.</br>
+The steady increase in score as well as the narrowing of score range can be seen graphing perdicted final score of each random games against percentage of game completed.</br>
+![Alt text](/Graphs/scoreRangePerMovedepth1000.png?raw=true)</br>
+</br>
+Similarlly observing when the random games cross the next tile thresh hold shows that each games does so at nearly the same time.
+![Alt text](/Graphs/highTilePerMovedepth1000.png?raw=true)</br>
+</br>
+Lastly looking at the perdicted moves until game completion the correlation between the highest merged tiles and game length becomes clear. At each merged high tile perdicted game length increases dramatically. The addtional jumps I assume to be the merging of other high tiles.
+![Alt text](/Graphs/moveRangePerMovedepth1000.png?raw=true)</br>
+</br>
 ======
 
 ### Improvements
