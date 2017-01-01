@@ -32,7 +32,18 @@ These failed to perform well even after weighing for tile score and total board 
 
 ### Algorithm
 ````
-Somce code
+for i < CONGIF.DEPTH
+  Clone current game states
+  
+  while cloned stated game not over
+    pick ramdon move to play
+    
+  Record end score
+  Record first move
+  i++
+  
+Make starting move with highest average end score
+
 ````
 ======
 
