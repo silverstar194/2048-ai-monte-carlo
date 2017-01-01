@@ -49,25 +49,30 @@ Make starting move with highest average end score
 
 ### Results
 100 games were played with different amount of random games played at each move. Random game depths included 50, 100, 500 and 1000.
+</br>
 On averege as more random games were played at each move the end score increased and seems to be maximised at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
 
 Game Depth 50:</br>
+42% of games where able to be won at a depth of 50</br>
 ![Alt text](/Graphs/totalScoreFor50.png?raw=true)</br>
 ![Alt text](/Graphs/totalMovesFor50.png?raw=true)</br>
 ![Alt text](/Graphs/highTileFor50.png?raw=true)</br>
 
 Game Depth 100:</br>
+61% of games where able to be won at a depth of 100</br>
 ![Alt text](/Graphs/totalScoreFor100.png?raw=true)</br>
 ![Alt text](/Graphs/totalMovesFor100.png?raw=true)</br>
 ![Alt text](/Graphs/highTileFor100.png?raw=true)</br>
 
 
 Game Depth 500:</br>
+94% of games where able to be won at a depth of 500</br>
 ![Alt text](/Graphs/totalScoreFor500.png?raw=true)</br>
 ![Alt text](/Graphs/totalMovesFor500.png?raw=true)</br>
 ![Alt text](/Graphs/highTileFor500.png?raw=true)</br>
 
 Game Depth 1000:</br>
+99% of games where able to be won at a depth of 1000</br>
 ![Alt text](/Graphs/totalScoreFor1000.png?raw=true)</br>
 ![Alt text](/Graphs/totalMovesFor1000.png?raw=true)</br>
 ![Alt text](/Graphs/highTileFor1000.png?raw=true)</br>
@@ -78,7 +83,19 @@ Plotting all the game depths together you can see the score, maximum tile and ga
 ![Alt text](/Graphs/totalMovesForAll.png?raw=true)</br>
 ![Alt text](/Graphs/highTileForAll.png?raw=true)</br>
 
-While games where able to be won 
+
+In summary as the depth increased the percentage of game won and score did also. The 8192 tile was also only achieved at the 500 and 1000 depths.
+
+| Depth        	| Won           | Max score     |
+| ------------- |:-------------:|:-------------:|
+| 50	        | 42% 			| 47424			|
+| 100     		| 61%      		| 76256			|
+| 500 			| 94%   		| 103932		|
+| 1000 			| 99%   		| 113072		|
+
+
+
+
 ======
 
 ### Improvements

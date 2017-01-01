@@ -75,7 +75,7 @@ legend("topright", title="Depths", legend = c("50","100","500","1000", "random")
 dev.off()
 
 #save plot
-png(file="/Users/Admin/Documents/workspace/2048/Graphs/totalMovesFor50.png")
+png(file="/Users/Admin/Documents/workspace/2048/Graphs/totalMovesForAll.png")
 
 #total moves for all
 a = ts(depth50$moves)
@@ -207,8 +207,10 @@ png(file="/Users/Admin/Documents/workspace/2048/Graphs/highTileFor50.png")
 #highestTile for 50
 a = ts(depth50$highTile)
 e = ts(random$highTile)
-ts.plot(a, e, gpars = list(main="Highest Tile for Depth 50", ylab="Highest Tile", xlab="Trial #", col = c("black", "purple")))
+ts.plot(a, e, gpars = list(main="Highest Tile for Depth 50", yaxt="n", ylab="Highest Tile", xlab="Trial #", col = c("black", "purple")))
 legend("topright", title="Depths", legend = c("50","random"), col = c("black", "purple"), lty = 1)
+axis(1)
+axis(2, at=c(-40,240,552,1024,2048,4096,8192), labels=c(128,256,512,1024,2048,4096,8192))
 
 dev.off()
 
@@ -219,8 +221,10 @@ png(file="/Users/Admin/Documents/workspace/2048/Graphs/highTileFor100.png")
 #highestTile for 100
 a = ts(depth100$highTile)
 e = ts(random$highTile)
-ts.plot(a, e, gpars = list(main="Highest Tile for Depth 100", ylab="Highest Tile", xlab="Trial #", col = c("red", "purple")))
+ts.plot(a, e, gpars = list(main="Highest Tile for Depth 100", yaxt="n", ylab="Highest Tile", xlab="Trial #", col = c("red", "purple")))
 legend("topright", title="Depths", legend = c("100","random"), col = c("red", "purple"), lty = 1)
+axis(1)
+axis(2, at=c(-40,240,552,1024,2048,4096,8192), labels=c(128,256,512,1024,2048,4096,8192))
 
 dev.off()
 
@@ -232,8 +236,10 @@ png(file="/Users/Admin/Documents/workspace/2048/Graphs/highTileFor500.png")
 #highestTile for 500
 a = ts(depth500$highTile)
 e = ts(random$highTile)
-ts.plot(a, e, gpars = list(main="Highest Tile for Depth 500",ylab="Highest Tile", xlab="Trial #", col = c("green", "purple")))
+ts.plot(a, e, gpars = list(main="Highest Tile for Depth 500", yaxt="n", ylab="Highest Tile", xlab="Trial #", col = c("green", "purple")))
 legend("topright", title="Depths", legend = c("500","random"), col = c("green", "purple"), lty = 1)
+axis(1)
+axis(2, at=c(-40,240,552,1024,2048,4096,8192), labels=c(128,256,512,1024,2048,4096,8192))
 
 dev.off()
 
@@ -244,8 +250,10 @@ png(file="/Users/Admin/Documents/workspace/2048/Graphs/highTileFor1000.png")
 #highestTile for 1000
 a = ts(depth1000$highTile)
 e = ts(random$highTile)
-ts.plot(a, e, gpars = list(main="Highest Tile for Depth 1000",ylab="Highest Tile", xlab="Trial #", col = c("blue", "purple")))
+ts.plot(a, e, gpars = list(main="Highest Tile for Depth 1000", yaxt="n", ylab="Highest Tile", xlab="Trial #", col = c("blue", "purple")))
 legend("topright", title="Depths", legend = c("1000","random"), col = c("blue", "purple"), lty = 1)
+axis(1)
+axis(2, at=c(-40,240,552,1024,2048,4096,8192), labels=c(128,256,512,1024,2048,4096,8192))
 
 dev.off()
 
