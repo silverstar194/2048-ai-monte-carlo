@@ -26,11 +26,14 @@ The initial brute force recursive approach failed to provide significant results
 4. Kepping high values on edges</br>
 ![Alt text](/Examples/highsides.png?raw=true)
 
-These failed to perform well even after weighing for tile score and total board score dynamically.
+These failed to perform well even after weighing for tile score and total board score dynamically. Without the ability to rate fitness of board states accurately a more unsupervised appoached seemed in order. By randomly playing multiple games out to termination and tracking starting moves I was able to guess a "good" move.
 
 ======
 
 ### Algorithm
+````
+Somce code
+````
 ======
 
 ### Results
@@ -40,6 +43,6 @@ These failed to perform well even after weighing for tile score and total board 
 ======
 
 #### Credit and Sources
-http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048
-https://github.com/gabrielecirulli/2048
-http://beej.us/blog/data/monte-carlo-method-game-ai/
+http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br
+https://github.com/gabrielecirulli/2048</br
+http://beej.us/blog/data/monte-carlo-method-game-ai/</br
