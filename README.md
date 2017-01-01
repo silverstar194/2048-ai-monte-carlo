@@ -50,6 +50,7 @@ Make starting move with highest average end score
 ### Results
 100 games were played with different amount of random games played at each move. Random game depths included 50, 100, 500 and 1000.
 </br>
+</br>
 On averege as more random games were played at each move the end score increased and seems to be maximised at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
 
 Game Depth 50:</br>
@@ -113,6 +114,9 @@ Lastly looking at the perdicted moves until game completion the correlation betw
 ======
 
 ### Improvements
+By inceasing the number of random games played the general trend was an increase in score as well as game length. This did seemed to be capped at a 8192 tile. Running 10 games with a depth of 10,000 seemed to comfirm this. None of the games where able to break 8192 and instead games became more consistent, resulting with 8/10 falling on 4096, 1/10 reaching 8192 and all at least acheiving 2048. Further increases beyond 10,000 while impractically slow to run without optimatzation are likely to yeld more results.
+</br>
+Another approach is likley needed to make drastic improvements. One approach would be to use the "moves until game over" as a fitness score for a supervised classification AI. Bootstapping with the best games as training data. I plan to investigate this later on.
 ======
 
 #### Credit and Sources
