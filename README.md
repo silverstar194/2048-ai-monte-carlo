@@ -77,6 +77,8 @@ Plotting all the game depths together you can see the score, maximum tile and ga
 ![Alt text](/Graphs/highScoreForAll.png?raw=true)</br>
 ![Alt text](/Graphs/totalMovesForAll.png?raw=true)</br>
 ![Alt text](/Graphs/highTileForAll.png?raw=true)</br>
+
+While games where able to be won 
 ======
 
 ### Improvements
