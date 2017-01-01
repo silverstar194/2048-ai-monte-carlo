@@ -48,7 +48,29 @@ Make starting move with highest average end score
 ======
 
 ### Results
-The results
+100 games were played with different amount of random games played at each move. Random game depths included 50, 100, 500 and 1000.
+On averege as more random games were played at each move the end score increased and seems to be maximised at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
+
+Game Depth 50:</br>
+![Alt text](/Graphs/totalScoreFor50.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor50.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor50.png?raw=true)</br>
+
+Game Depth 100:</br>
+![Alt text](/Graphs/totalScoreFor100.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor100.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor100.png?raw=true)</br>
+
+
+Game Depth 500:</br>
+![Alt text](/Graphs/totalScoreFor500.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor500.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor500.png?raw=true)</br>
+
+Game Depth 1000:</br>
+![Alt text](/Graphs/totalScoreFor1000.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor1000.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor1000.png?raw=true)</br>
 
 ======
 
@@ -58,4 +80,4 @@ The results
 #### Credit and Sources
 http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br>
 https://github.com/gabrielecirulli/2048</br>
-http://beej.us/blog/data/monte-carlo-method-game-ai/</br
+http://beej.us/blog/data/monte-carlo-method-game-ai/</br>
