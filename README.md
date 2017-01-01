@@ -14,19 +14,20 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 ### Intuition
 The initial brute force recursive approach failed to provide significant results due to a lack of accurate heuristics. Judgeing which board state was better then another proved to be very difficult. From prior experience with gameplay I tried rating fittness based on:
 
-1. Monotonically increaseing or decreasing values on board edges
+1. Monotonically increaseing or decreasing values on board edges</br>
 ![Alt text](/Examples/mono.png?raw=true)
 
-2. Emptiness of board
+2. Emptiness of board</br>
 ![Alt text](/Examples/empty.png?raw=true)
 
-3. Ability to merge tiles
+3. Ability to merge tiles</br>
 ![Alt text](/Examples/merge.png?raw=true)
 
-4. Kepping high values on edges
+4. Kepping high values on edges</br>
 ![Alt text](/Examples/highsides.png?raw=true)
 
 These failed to perform well even after weighing for tile score and total board score dynamically.
+
 ======
 
 ### Algorithm
@@ -37,3 +38,8 @@ These failed to perform well even after weighing for tile score and total board 
 
 ### Improvements
 ======
+
+#### Credit and Sources
+http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048
+https://github.com/gabrielecirulli/2048
+http://beej.us/blog/data/monte-carlo-method-game-ai/
