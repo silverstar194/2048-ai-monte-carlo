@@ -52,6 +52,7 @@ Make starting move with highest average end score
 </br>
 On averege as more random games were played at each move the end score increased and seems to be maximised at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
 
+#### Differing Depth Results
 Game Depth 50:</br>
 42% of games where able to be won at a depth of 50</br>
 ![Alt text](/Graphs/totalScoreFor50.png?raw=true)</br>
@@ -94,6 +95,7 @@ In summary as the depth increased the percentage of game won and score did also.
 | 1000 			| 99%   		| 113072		|
 
 
+#### Random Games within a Depth
 Most intersting was the spread of the random games behind each move.</br>
 
 The steady increase in score as well as the narrowing of score range can be seen graphing perdicted final score of each random games against percentage of game completed.</br>
