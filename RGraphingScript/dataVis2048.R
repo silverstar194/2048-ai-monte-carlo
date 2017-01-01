@@ -257,7 +257,6 @@ axis(2, at=c(-40,240,552,1024,2048,4096,8192), labels=c(128,256,512,1024,2048,40
 
 dev.off()
 
-
 #save plot
 png(file="/Users/Admin/Documents/workspace/2048/Graphs/scoreRangePerMovedepth1000.png")
 
