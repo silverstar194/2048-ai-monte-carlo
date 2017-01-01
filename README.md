@@ -72,6 +72,11 @@ Game Depth 1000:</br>
 ![Alt text](/Graphs/totalMovesFor1000.png?raw=true)</br>
 ![Alt text](/Graphs/highTileFor1000.png?raw=true)</br>
 
+</br>
+Plotting all the game depths together you can see the score, maximum tile and game length all increase as depth increases.</br>
+![Alt text](/Graphs/highScoreForAll.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesForAll.png?raw=true)</br>
+![Alt text](/Graphs/highTileForAll.png?raw=true)</br>
 ======
 
 ### Improvements
