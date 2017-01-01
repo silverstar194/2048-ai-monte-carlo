@@ -14,19 +14,75 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 ### Intuition
 The initial brute force recursive approach failed to provide significant results due to a lack of accurate heuristics. Judgeing which board state was better then another proved to be very difficult. From prior experience with gameplay I tried rating fittness based on:
 
-1. Monotonically increaseing or decreasing values on board edges
-2. Emptiness of board
-3. Ability to merge tiles
-4. Kepping high values on edges
+1. Monotonically increaseing or decreasing values on board edges</br>
+![Alt text](/Examples/mono.png?raw=true)
 
-These failed to perform well even after weighing for tile score and total board score dynamically.
+2. Emptiness of board</br>
+![Alt text](/Examples/empty.png?raw=true)
+
+3. Ability to merge tiles</br>
+![Alt text](/Examples/merge.png?raw=true)
+
+4. Kepping high values on edges</br>
+![Alt text](/Examples/highsides.png?raw=true)
+
+These failed to perform well even after weighing for tile score and total board score dynamically. Without the ability to rate fitness of board states accurately a more unsupervised appoached seemed in order. By randomly playing multiple games out to termination and tracking starting moves I was able to guess a "good" move.
+
 ======
 
 ### Algorithm
+````
+for i < CONGIF.DEPTH
+  Clone current game state
+  
+  while cloned state game not over
+    pick random move to play
+    Record first move
+  
+  Record end score
+  i++
+  
+Make starting move with highest average end score
+
+````
 ======
 
 ### Results
+100 games were played with different amount of random games played at each move. Random game depths included 50, 100, 500 and 1000.
+On averege as more random games were played at each move the end score increased and seems to be maximised at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
+
+Game Depth 50:</br>
+![Alt text](/Graphs/totalScoreFor50.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor50.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor50.png?raw=true)</br>
+
+Game Depth 100:</br>
+![Alt text](/Graphs/totalScoreFor100.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor100.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor100.png?raw=true)</br>
+
+
+Game Depth 500:</br>
+![Alt text](/Graphs/totalScoreFor500.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor500.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor500.png?raw=true)</br>
+
+Game Depth 1000:</br>
+![Alt text](/Graphs/totalScoreFor1000.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesFor1000.png?raw=true)</br>
+![Alt text](/Graphs/highTileFor1000.png?raw=true)</br>
+
+</br>
+Plotting all the game depths together you can see the score, maximum tile and game length all increase as depth increases.</br>
+![Alt text](/Graphs/highScoreForAll.png?raw=true)</br>
+![Alt text](/Graphs/totalMovesForAll.png?raw=true)</br>
+![Alt text](/Graphs/highTileForAll.png?raw=true)</br>
 ======
 
 ### Improvements
 ======
+
+#### Credit and Sources
+http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br>
+https://github.com/gabrielecirulli/2048</br>
+http://beej.us/blog/data/monte-carlo-method-game-ai/</br>
