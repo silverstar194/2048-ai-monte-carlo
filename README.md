@@ -15,9 +15,16 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 The initial brute force recursive approach failed to provide significant results due to a lack of accurate heuristics. Judgeing which board state was better then another proved to be very difficult. From prior experience with gameplay I tried rating fittness based on:
 
 1. Monotonically increaseing or decreasing values on board edges
+![Alt text](/Examples/mono.png?raw=true)
+
 2. Emptiness of board
+![Alt text](/Examples/empty.png?raw=true)
+
 3. Ability to merge tiles
+![Alt text](/Examples/merge.png?raw=true)
+
 4. Kepping high values on edges
+![Alt text](/Examples/highsides.png?raw=true)
 
 These failed to perform well even after weighing for tile score and total board score dynamically.
 ======
