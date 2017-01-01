@@ -33,13 +33,13 @@ These failed to perform well even after weighing for tile score and total board 
 ### Algorithm
 ````
 for i < CONGIF.DEPTH
-  Clone current game states
+  Clone current game state
   
-  while cloned stated game not over
-    pick ramdon move to play
-    
+  while cloned state game not over
+    pick random move to play
+    Record first move
+  
   Record end score
-  Record first move
   i++
   
 Make starting move with highest average end score
@@ -48,12 +48,14 @@ Make starting move with highest average end score
 ======
 
 ### Results
+The results
+
 ======
 
 ### Improvements
 ======
 
 #### Credit and Sources
-http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br
-https://github.com/gabrielecirulli/2048</br
+http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br>
+https://github.com/gabrielecirulli/2048</br>
 http://beej.us/blog/data/monte-carlo-method-game-ai/</br
