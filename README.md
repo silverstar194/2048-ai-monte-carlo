@@ -108,7 +108,7 @@ Similarlly observing when the random games cross the next tile thresh hold shows
 ![Alt text](/Graphs/highTilePerMovedepth1000.png?raw=true)</br>
 </br>
 
-Lastly looking at the perdicted moves until game completion the correlation between the highest merged tiles and game length becomes clear. At each merged high tile perdicted game length increases dramatically. The addtional jumps I assume to be the merging of other high tiles.
+Lastly looking at the predicted moves until game completion the correlation between the highest merged tiles and game length becomes clear. At each merged high tile predicted game length increases dramatically. The additional jumps I assume to be the merging of other high tiles.
 
 ![Alt text](/Graphs/moveRangePerMovedepth1000.png?raw=true)</br>
 </br>
