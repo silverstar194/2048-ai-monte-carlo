@@ -10,6 +10,8 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 
 ======
 
+### AI Playing Game
+[![AI Playing Game](http://img.youtube.com/vi/2Bu7sx4e85E/0.jpg)](https://youtu.be/2Bu7sx4e85E "")
 
 ### Intuition
 The initial brute force recursive approach failed to provide significant results due to a lack of accurate heuristics. Judgeing which board state was better then another proved to be very difficult. From prior experience with gameplay I tried rating fittness based on:
@@ -116,7 +118,10 @@ Lastly looking at the predicted moves until game completion the correlation betw
 ======
 
 ### Improvements
-By inceasing the number of random games played the general trend was an increase in score as well as game length. This did seemed to be capped at a 8192 tile. Running 10 games with a depth of 10,000 seemed to comfirm this. None of the games where able to break 8192 and instead games became more consistent, resulting with 8/10 falling on 4096, 1/10 reaching 8192 and all at least acheiving 2048. Further increases beyond 10,000 while impractically slow to run without optimatzation are likely to yeld more results.
+By inceasing the number of random games played the general trend was an increase in score as well as game length. This did seemed to be capped at a 8192 tile.</br>
+Running 10 games with a depth of 10,000 seemed to comfirm this. None of the games where able to break 8192 and instead games became more consistent, resulting with 8/10 falling on 4096, 1/10 reaching 8192 and all at least acheiving 2048. Further increases beyond 10,000 while impractically slow to run without optimatzation are likely to yeld more results.
+</br>
+
 </br>
 Another approach is likley needed to make drastic improvements. One approach would be to use the "moves until game over" as a fitness score for a supervised classification AI. Bootstapping with the best games as training data. I plan to investigate this later on.
 
@@ -126,3 +131,4 @@ Another approach is likley needed to make drastic improvements. One approach wou
 http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br>
 https://github.com/gabrielecirulli/2048</br>
 http://beej.us/blog/data/monte-carlo-method-game-ai/</br>
+https://en.wikipedia.org/wiki/2048_(video_game))
