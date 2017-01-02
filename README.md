@@ -10,6 +10,8 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 
 ======
 
+### AI Playing Game
+[![AI Playing Game](http://img.youtube.com/vi/2Bu7sx4e85E/0.jpg)](https://youtu.be/2Bu7sx4e85E "")
 
 ### Intuition
 The initial brute force recursive approach failed to provide significant results due to a lack of accurate heuristics. Judgeing which board state was better then another proved to be very difficult. From prior experience with gameplay I tried rating fittness based on:
