@@ -26,42 +26,41 @@ public class ChromeController {
 
 
 	public static void main(String[] args) throws InterruptedException, JSONException {
-		// Create a new instance of the html unit driver
-		// Notice that the remainder of the code relies on the interface, 
-		// not the implementation.
-
+		
+		//set properties
 		System.setProperty("webdriver.chrome.driver","/Users/Admin/Downloads/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--test-type");
 
-
+		//enable logging
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		LoggingPreferences logPrefs = new LoggingPreferences();
 		logPrefs.enable(LogType.BROWSER, Level.ALL);
 		caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
+		
+		//open page
 		ChromeDriver driver = new ChromeDriver(caps);
-
-
-		// And now use this to visit Google
 		driver.get(Config.PATH_TO_2048);
-
-		int lastInput = 0;
 
 		
 		//prevents infinite cycles
 		int lastInputCount = 0;
+		int lastInput = 0;
 
 		Board myGame = new Board(new int[4][4]);
 		while(!myGame.gameOver()){
 
+			//clear after each output
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("console.clear();");
 
-			MaxScoreMonteCarlo calcNextMove = new MaxScoreMonteCarlo(myGame);
 			
+			MaxScoreMonteCarlo calcNextMove = new MaxScoreMonteCarlo(myGame);
 			int input = calcNextMove.nextMove();
 			
+			
+			//prevent loops
 			if(input == lastInput){
 				lastInputCount++;
 			}else{
@@ -71,7 +70,6 @@ public class ChromeController {
 			lastInput = input;
 			
 			if(lastInputCount > 5){
-				System.out.println("Random");
 				input = (int)(Math.random() * 4);
 				lastInputCount = 0;
 			}
@@ -92,12 +90,15 @@ public class ChromeController {
 			LogEntry l = null;
 			if(logs.getAll().size() > 0){
 			l = logs.getAll().get(logs.getAll().size()-1);
+			
+			//adds wait is browser falls behind
 			}else{
 				Thread.sleep(2000);
 				logs = driver.manage().logs().get("browser");
 				l = logs.getAll().get(logs.getAll().size()-1);
 			}
 
+			//parse out response
 			if(l.getMessage().contains("{")){
 				String data = l.getMessage().substring(l.getMessage().indexOf("{"),l.getMessage().length()-1);
 				JSONObject dataJSON = new JSONObject(data.replaceAll("\\\\", ""));
@@ -117,6 +118,8 @@ public class ChromeController {
 
 				}
 				myGame = new Board(board);
+				
+				//add wait for rendering
 				Thread.sleep(100);
 			}
 
