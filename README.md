@@ -106,7 +106,7 @@ The steady increase in score as well as the narrowing of score range can be seen
 ![Alt text](/Graphs/scoreRangePerMovedepth1000.png?raw=true)</br>
 </br>
 
-Similarlly observing when the random games cross the next tile thresh hold shows that each games does so at nearly the same time.
+Similarlly observing when the random games cross the next tile threshold shows that each games does so at nearly the same time.
 
 ![Alt text](/Graphs/highTilePerMovedepth1000.png?raw=true)</br>
 </br>
