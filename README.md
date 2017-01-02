@@ -11,7 +11,7 @@ The game is won when a tile with a value of 2048 appears on the board, hence the
 ======
 
 ### AI Playing Game
-Click for Video
+Click for Video</br>
 [![AI Playing Game](http://img.youtube.com/vi/2Bu7sx4e85E/0.jpg)](https://youtu.be/2Bu7sx4e85E "")
 
 ### Intuition
@@ -54,30 +54,30 @@ Make starting move with highest average end score
 100 games were played with different amounts of random games played out at each move (aka game depth). Random game depths included 50, 100, 500 and 1000.
 </br>
 </br>
-On averege as more random games were played at each move the end score increased and seems to be maximized at a 8192 tile. A control game series of completly random moves resulted in no more then a 265 tile.
+On averege as more random games were played at each move the end score increased and seems to be maximized at a 8192 tile. A control game series of completly random moves resulted in no more then a 256 tile.
 
 #### Differing Depth Results
 Game Depth 50:</br>
-42% of games where able to be won at a depth of 50</br>
+42% of games were able to be won at a depth of 50</br>
 ![Alt text](/Graphs/totalScoreFor50.png?raw=true)
 ![Alt text](/Graphs/totalMovesFor50.png?raw=true)
 ![Alt text](/Graphs/highTileFor50.png?raw=true)
 
 Game Depth 100:</br>
-61% of games where able to be won at a depth of 100</br>
+61% of games were able to be won at a depth of 100</br>
 ![Alt text](/Graphs/totalScoreFor100.png?raw=true)
 ![Alt text](/Graphs/totalMovesFor100.png?raw=true)
 ![Alt text](/Graphs/highTileFor100.png?raw=true)
 
 
 Game Depth 500:</br>
-94% of games where able to be won at a depth of 500</br>
+94% of games were able to be won at a depth of 500</br>
 ![Alt text](/Graphs/totalScoreFor500.png?raw=true)
 ![Alt text](/Graphs/totalMovesFor500.png?raw=true)
 ![Alt text](/Graphs/highTileFor500.png?raw=true)
 
 Game Depth 1000:</br>
-99% of games where able to be won at a depth of 1000</br>
+99% of games were able to be won at a depth of 1000</br>
 ![Alt text](/Graphs/totalScoreFor1000.png?raw=true)
 ![Alt text](/Graphs/totalMovesFor1000.png?raw=true)
 ![Alt text](/Graphs/highTileFor1000.png?raw=true)
