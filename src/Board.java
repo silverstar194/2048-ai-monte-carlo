@@ -23,6 +23,14 @@ public class Board {
 		this.board = Arrays.stream(myGame.board).map(int[]::clone).toArray(int[][]::new);
 		this.score = myGame.score;
 	}
+	
+	//for chrome driver
+	public Board(int[][] board){
+
+		this.board = Arrays.stream(board).map(int[]::clone).toArray(int[][]::new);
+		this.score = 0;
+		printBoard();
+	}
 
 	public void moveLeft(boolean sim){
 		int[][] boardCopy = new int[4][4];

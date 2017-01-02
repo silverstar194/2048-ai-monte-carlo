@@ -16,6 +16,10 @@ public class MaxScoreMonteCarlo {
 		this.writer = writer;
 	}
 
+	public MaxScoreMonteCarlo(Board myGame){
+		this.myGame = new Board(myGame);
+	}
+
 	public int nextMove(){
 
 		double moveZero = 0;
@@ -37,12 +41,12 @@ public class MaxScoreMonteCarlo {
 			int count = 0;
 			int firstMove = -1;
 			int gameMoves = 0;
-			
+
 			while(!boardCopy.gameOver()){
 				gameMoves++;
 				//generate random next move
 				input =  (int)(Math.random() * 4);
-				
+
 				//make the random move
 				if(input == 0){
 					boardCopy.moveUp(true);
@@ -64,7 +68,7 @@ public class MaxScoreMonteCarlo {
 				}else if(input == 3 && count == 0){
 					moveThreeCount++;
 				}
-				
+
 				//record what the first random move was
 				if(count == 0){
 					firstMove = input;
@@ -83,9 +87,10 @@ public class MaxScoreMonteCarlo {
 			}else if(firstMove == 3){
 				moveThree += boardCopy.getScore();
 			}
-			
-			writer.println("t,"+this.count+","+boardCopy.getScore()+","+boardCopy.maxTile()+","+gameMoves);
 
+			if(writer != null){
+				writer.println("t,"+this.count+","+boardCopy.getScore()+","+boardCopy.maxTile()+","+gameMoves);
+			}
 		}
 
 		//calculate random game averages
@@ -107,9 +112,9 @@ public class MaxScoreMonteCarlo {
 		}else if(maxOfAll == moveThree){
 			return 3;
 		}
-		
-		
-		
+
+
+
 		return -1;
 	}
 
