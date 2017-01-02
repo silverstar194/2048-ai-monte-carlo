@@ -58,34 +58,34 @@ On averege as more random games were played at each move the end score increased
 #### Differing Depth Results
 Game Depth 50:</br>
 42% of games where able to be won at a depth of 50</br>
-![Alt text](/Graphs/totalScoreFor50.png?raw=true)</br>
-![Alt text](/Graphs/totalMovesFor50.png?raw=true)</br>
-![Alt text](/Graphs/highTileFor50.png?raw=true)</br>
+![Alt text](/Graphs/totalScoreFor50.png?raw=true)
+![Alt text](/Graphs/totalMovesFor50.png?raw=true)
+![Alt text](/Graphs/highTileFor50.png?raw=true)
 
 Game Depth 100:</br>
 61% of games where able to be won at a depth of 100</br>
-![Alt text](/Graphs/totalScoreFor100.png?raw=true)</br>
-![Alt text](/Graphs/totalMovesFor100.png?raw=true)</br>
-![Alt text](/Graphs/highTileFor100.png?raw=true)</br>
+![Alt text](/Graphs/totalScoreFor100.png?raw=true)
+![Alt text](/Graphs/totalMovesFor100.png?raw=true)
+![Alt text](/Graphs/highTileFor100.png?raw=true)
 
 
 Game Depth 500:</br>
 94% of games where able to be won at a depth of 500</br>
-![Alt text](/Graphs/totalScoreFor500.png?raw=true)</br>
-![Alt text](/Graphs/totalMovesFor500.png?raw=true)</br>
-![Alt text](/Graphs/highTileFor500.png?raw=true)</br>
+![Alt text](/Graphs/totalScoreFor500.png?raw=true)
+![Alt text](/Graphs/totalMovesFor500.png?raw=true)
+![Alt text](/Graphs/highTileFor500.png?raw=true)
 
 Game Depth 1000:</br>
 99% of games where able to be won at a depth of 1000</br>
-![Alt text](/Graphs/totalScoreFor1000.png?raw=true)</br>
-![Alt text](/Graphs/totalMovesFor1000.png?raw=true)</br>
-![Alt text](/Graphs/highTileFor1000.png?raw=true)</br>
+![Alt text](/Graphs/totalScoreFor1000.png?raw=true)
+![Alt text](/Graphs/totalMovesFor1000.png?raw=true)
+![Alt text](/Graphs/highTileFor1000.png?raw=true)
 
 </br>
 Plotting all the game depths together you can see the score, maximum tile and game length all increase as depth increases.</br>
-![Alt text](/Graphs/highScoreForAll.png?raw=true)</br>
-![Alt text](/Graphs/totalMovesForAll.png?raw=true)</br>
-![Alt text](/Graphs/highTileForAll.png?raw=true)</br>
+![Alt text](/Graphs/highScoreForAll.png?raw=true)
+![Alt text](/Graphs/totalMovesForAll.png?raw=true)
+![Alt text](/Graphs/highTileForAll.png?raw=true)
 
 
 In summary as the depth increased the percentage of game won and score did also. The 8192 tile was also only achieved at the 500 and 1000 depths.
@@ -103,17 +103,17 @@ Most intersting was the spread of the random games behind each move.</br>
 
 The steady increase in score as well as the narrowing of score range can be seen graphing perdicted final score of each random games against percentage of game completed.</br>
 
-![Alt text](/Graphs/scoreRangePerMovedepth1000.png?raw=true)</br>
+![Alt text](/Graphs/scoreRangePerMovedepth1000.png?raw=true)
 </br>
 
 Similarlly observing when the random games cross the next tile threshold shows that each games does so at nearly the same time.
 
-![Alt text](/Graphs/highTilePerMovedepth1000.png?raw=true)</br>
+![Alt text](/Graphs/highTilePerMovedepth1000.png?raw=true)
 </br>
 
 Lastly looking at the predicted moves until game completion the correlation between the highest merged tiles and game length becomes clear. At each merged high tile predicted game length increases dramatically. The additional jumps I assume to be the merging of other high tiles.
 
-![Alt text](/Graphs/moveRangePerMovedepth1000.png?raw=true)</br>
+![Alt text](/Graphs/moveRangePerMovedepth1000.png?raw=true)
 </br>
 ======
 
