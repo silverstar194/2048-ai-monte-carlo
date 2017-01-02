@@ -130,3 +130,4 @@ Another approach is likley needed to make drastic improvements. One approach wou
 http://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048</br>
 https://github.com/gabrielecirulli/2048</br>
 http://beej.us/blog/data/monte-carlo-method-game-ai/</br>
+https://en.wikipedia.org/wiki/2048_(video_game))
